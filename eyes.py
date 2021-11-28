@@ -9,10 +9,10 @@ from time import sleep
 eye_led = gpiozero.LED(6)
 
 # Eye 0 (left)
-l_eye = gpiozero.MotionSensor(3)
+l_eye = gpiozero.MotionSensor(17)
 
 # Eye 1 (right)
-r_eye = gpiozero.MotionSensor(2)
+# r_eye = gpiozero.MotionSensor(2)
 
 # Servo
 servo = gpiozero.Servo(4)
