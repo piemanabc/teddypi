@@ -1,9 +1,6 @@
 import gpiozero
 from time import sleep
 
-# !!!           !!!#
-# start variables
-# !!!           !!!#
 
 # Eye LEDs
 eye_led = gpiozero.LED(6)
@@ -18,7 +15,7 @@ r_eye = gpiozero.MotionSensor(27)
 servo = gpiozero.Servo(4)
 
 while True:
-    if l_eye.motion_detected():
+    if l_eye.motion_detected:
         print("left motion!")
         servo.value = -1
         sleep(2)
