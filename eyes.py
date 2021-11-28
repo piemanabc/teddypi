@@ -17,4 +17,4 @@ r_pin_in = 2
 R_pin_out = 8
 
 # Servo
-servo = gpiozero.Servo(40)
+servo = gpiozero.Servo(4)
