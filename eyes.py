@@ -1,5 +1,5 @@
 import gpiozero
-import time
+from time import sleep
 
 # !!!           !!!#
 # start variables
@@ -18,3 +18,11 @@ R_pin_out = 8
 
 # Servo
 servo = gpiozero.Servo(4)
+
+while True:
+    servo.min()
+    sleep(1)
+    servo.mid()
+    sleep(1)
+    servo.max()
+    sleep(1)
