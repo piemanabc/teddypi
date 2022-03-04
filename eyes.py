@@ -7,13 +7,13 @@ l_eye_led = gpiozero.PWMLED(12)  # these pins may need to be moved
 r_eye_led = gpiozero.PWMLED(16)
 
 # Eye 0 (left)
-l_eye = gpiozero.MotionSensor(17)
+l_eye = gpiozero.MotionSensor(15)
 
 # Eye 1 (right)
-r_eye = gpiozero.MotionSensor(27)
+r_eye = gpiozero.MotionSensor(18)
 
 # Servo
-servo = gpiozero.Servo(4)
+servo = gpiozero.Servo(14)
 
 # loop forever
 
